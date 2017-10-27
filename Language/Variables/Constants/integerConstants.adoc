@@ -1,7 +1,7 @@
 ---
-title: Integer Constants
+title: Constantes Tipo Entero
 categories: [ "Variables" ]
-subCategories: [ "Constants" ]
+subCategories: [ "Constantes" ]
 ---
 
 :source-highlighter: pygments
