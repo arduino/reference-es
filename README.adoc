@@ -1,5 +1,5 @@
-= Reference-en
-Reference-en is the repo for the Language Reference documentation of the Arduino syntax in **English**.  
+= Reference-es
+Reference-es is the repo for the Language Reference documentation of the Arduino syntax in **Spanish**.  
 All the Reference terms files are in AsciiDoc format.
 
 Gracias por tomarte el tiempo para contribuir a contenido sobre Arduino, eso es de mucha ayuda para toda la comunidad Arduino.
