@@ -1,7 +1,7 @@
 ---
 title: "+"
 title_expanded: "Adición"
-categories: [ "Estructura" ]
+categories: [ "Structure" ]
 subCategories: [ "Operadores Aritméticos" ]
 ---
 
