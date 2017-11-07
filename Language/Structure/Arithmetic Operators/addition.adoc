@@ -1,8 +1,8 @@
 ---
 title: "+"
-title_expanded: "addition"
-categories: [ "Structure" ]
-subCategories: [ "Arithmetic Operators" ]
+title_expanded: "Adición"
+categories: [ "Estructura" ]
+subCategories: [ "Operadores Aritméticos" ]
 ---
 
 :source-highlighter: pygments
@@ -10,31 +10,31 @@ subCategories: [ "Arithmetic Operators" ]
 
 
 
-= + Addition
+= + Adición
 
 
 // OVERVIEW SECTION STARTS
-[#overview]
+[#Resumen]
 --
 
 [float]
-=== Description
-*Addition* is one of the four primary arithmetic operations. The operator `+` (plus) operates on two operands to produce the sum.
+=== Descripción
+La *adición* es una de las cuantro operaciones aritméticas  básicas. El operador `+` (mas) opera en dos operandos para producir la suma.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxis
 [source,arduino]
 ----
-sum = operand1 + operand2;
+suma = operando1 + operando2;
 ----
 
 [float]
-=== Parameters
-`sum` : variable. *Allowed data types:* int, float, double, byte, short, long +
-`operand1` : variable or constant. *Allowed data types:* int, float, double, byte, short, long +
-`operand2` : variable or constant. *Allowed data types:* int, float, double, byte, short, long
+=== Parámetros
+`suma` : variable. *Tipos de datos permitidos:* int, float, double, byte, short, long +
+`operando1` : variable o constante. *Tipos de datos permitidos:* int, float, double, byte, short, long +
+`operando2` : variable o constante. *Tipos de datos permitidos:* int, float, double, byte, short, long
 [%hardbreaks]
 --
 // OVERVIEW SECTION ENDS
@@ -47,44 +47,31 @@ sum = operand1 + operand2;
 --
 
 [float]
-=== Example Code
+=== Ejemplo
 
 [source,arduino]
 ----
 int a = 5, b = 10, c = 0;
-c = a + b; // the variable 'c' gets a value of 15 after this statement is executed
+c = a + b; // la variable 'c' recibe el valor de 15 una vez ejecutada la instrucción
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-1. The addition operation can overflow if the result is larger than that which can be stored in the data type (e.g. adding 1 to an integer with the value 32,767 gives -32,768).
+=== Notas y Advertencias
+1. La adición puede desbordar si el resultado es mayor que aquel que puede guardar el tipo de dato (e.g. agregar 1 a un entero que guarda 32,767 resulta en -32,768).
 
-2. If one of the numbers (operands) are of the type float or of type double, floating point math will be used for the calculation.
+2. Si uno de los operandos es de tipo float o  double, se usará matemática de punto flotante para el cálculo.
 
-3. If the operands are of float / double data type and the variable that stores the sum is an integer, then only the integral part is stored and the fractional part of the number is lost.
+3. Si los operandos son de tipo  float / double y la variable que guarda el  resultado es de tipo entero, entonces solo se guardará la parte entera y se perderá la parte fraccionaria.
 
 [source,arduino]
 ----
 float a = 5.5, b = 6.6;
 int c = 0;
-c = a + b; // the variable 'c' stores a value of 12 only as opposed to the expected sum of 12.1
+c = a + b; // la variable 'c' solo guarda el valor 12, contrastando con el valor esperado de 12.1
 ----
 [%hardbreaks]
 --
 // HOW TO USE SECTION ENDS
 
 
-
-
-// SEE ALSO SECTION
-[#see_also]
---
-
-[float]
-=== See also
-
-[role="language"]
-
---
-// SEE ALSO SECTION ENDS
