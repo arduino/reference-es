@@ -1,8 +1,8 @@
 ---
 title: "="
-title_expanded: "assignment operator"
+title_expanded: "Operador de asignación "
 categories: [ "Structure" ]
-subCategories: [ "Arithmetic Operators" ]
+subCategories: [ "Operadores Aritméticos" ]
 ---
 
 :source-highlighter: pygments
@@ -10,7 +10,7 @@ subCategories: [ "Arithmetic Operators" ]
 
 
 
-= = Assignment (single equal sign)
+= = Asignación (signo individual de igualdad)
 
 
 // OVERVIEW SECTION STARTS
@@ -18,8 +18,8 @@ subCategories: [ "Arithmetic Operators" ]
 --
 
 [float]
-=== Description
-The single equal sign `=` in the C programming language is called the assignment operator. It has a different meaning than in algebra class where it indicated an equation or equality. The assignment operator tells the microcontroller to evaluate whatever value or expression is on the right side of the equal sign, and store it in the variable to the left of the equal sign.
+=== Descripción
+Al signo individual de igualdad `=` en el lenguaje de programación C  se le llama operador de asignación. Tiene un significado diferente al de la clase de álgebra, en donde indicaba una ecuación o igualdad. El operador de asignación le dice al microcontrolador que evalue el valor o expresión a la derecha del signo igual, y lo almacene en la variable a la izquierda del signo igual.
 [%hardbreaks]
 
 --
@@ -33,22 +33,22 @@ The single equal sign `=` in the C programming language is called the assignment
 --
 
 [float]
-=== Example Code
+=== Ejemplo
 
 
 
 [source,arduino]
 ----
-int sensVal;              // declare an integer variable named sensVal
-sensVal = analogRead(0);  // store the (digitized) input voltage at analog pin 0 in SensVal
+int sensVal;              // declara una variable de tipo entero llamada sensVal
+sensVal = analogRead(0);  // guarda en SensVal el voltaje (digitalizado) de la entrada análoga del pin 0
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-1. The variable on the left side of the assignment operator ( = sign ) needs to be able to hold the value stored in it. If it is not large enough to hold a value, the value stored in the variable will be incorrect.
+=== Notas y precauciones
+1. La variable en el lado izquierdo del operador (signo = ) necesita ser capaz de contener el valor a almacenar. Si no es del tamaño adecuado para el valor, éste será almacenado erróneamente en la variable.
 
-2. Don't confuse the assignment operator [ = ] (single equal sign) with the comparison operator [ == ] (double equal signs), which evaluates whether two expressions are equal.
+2. No confundir el operador de asignación [ = ] (signo individual de igualdad) con el operador de comparación [ == ] (signo doble de igualdad), el cual evalua si dos expresiones son iguales.
 [%hardbreaks]
 
 --
@@ -59,13 +59,13 @@ sensVal = analogRead(0);  // store the (digitized) input voltage at analog pin 0
 --
 
 [float]
-=== See also
+=== Ver también
 
 [role="language"]
-* #LANGUAGE#  link:../../control-structure/if[if (conditional operators)]
-* #LANGUAGE#  link:../../../variables/data-types/char[char]
-* #LANGUAGE#  link:../../../variables/data-types/int[int]
-* #LANGUAGE#  link:../../../variables/data-types/long[long]
+* #LENGUAJE#  link:../../control-structure/if[if (operadores condicionales )]
+* #LENGUAJE#  link:../../../variables/data-types/char[char]
+* #LENGUAJE#  link:../../../variables/data-types/int[int]
+* #LENGUAJE#  link:../../../variables/data-types/long[long]
 
 --
 // SEE ALSO SECTION ENDS
