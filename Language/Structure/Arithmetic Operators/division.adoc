@@ -1,8 +1,8 @@
 ---
 title: "/"
-title_expanded: "division"
+title_expanded: "División"
 categories: [ "Structure" ]
-subCategories: [ "Arithmetic Operators" ]
+subCategories: [ "Operadores Aritméticos" ]
 ---
 
 :source-highlighter: pygments
@@ -10,7 +10,7 @@ subCategories: [ "Arithmetic Operators" ]
 
 
 
-= / Division
+= / División
 
 
 // OVERVIEW SECTION STARTS
@@ -18,23 +18,23 @@ subCategories: [ "Arithmetic Operators" ]
 --
 
 [float]
-=== Description
-*Division* is one of the four primary arithmetic operations. The operator `/` (slash) operates on two operands to produce the result.
+=== Descripción
+La *división* es una de las cuatro operations aritméticas básicas. El operator `/` (diagonal) opera con dos operandos y produce el resultado.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxis
 [source,arduino]
 ----
-result = numerator / denominator;
+resultado = numerador / denominador;
 ----
 
 [float]
-=== Parameters
-`result` : variable. *Allowed data types:* int, float, double, byte, short, long  +
-`numerator` : variable or constant. *Allowed data types:* int, float, double, byte, short, long  +
-`denominator` : *non zero* variable or constant. *Allowed data types:* int, float, double, byte, short, long
+=== Parámetros
+`resultado` : variable. *Tipos de dato permitidos:* int, float, double, byte, short, long  +
+`numerador` : variable or constante. *Tipos de dato permitidos:* int, float, double, byte, short, long  +
+`denominador` : variable or constante *distinta a cero* . *Tipos de dato permitidos:* int, float, double, byte, short, long
 [%hardbreaks]
 
 --
@@ -48,40 +48,29 @@ result = numerator / denominator;
 --
 
 [float]
-=== Example Code
+=== Ejemplo
 
 [source,arduino]
 ----
 int a = 50, b = 10, c = 0;
-c = a / b; // the variable 'c' gets a value of 5 after this statement is executed
+c = a / b; // la variable 'c' recibe el valor de 5 tras ejecutarse la instrucción
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-1. If one of the numbers (operands) are of the type float or of type double, floating point math will be used for the calculation.
+=== Notas  y precauciones 
+1. Si uno de los números (operandos) es de tipo float o double, se usar matemática de punto flotante para el cálculo.
 
-2. If the operands are of float / double data type and the variable that stores the sum is an integer, then only the integral part is stored and the fractional part of the number is lost.
+2. Si los operandos son de tipo  float / double y la variable que guarda el resultado es un integer, entonces solo la parte entera es almacenada, y la parte fraccionaria se pierde.
 
 [source,arduino]
 ----
 float a = 55.5, b = 6.6;
 int c = 0;
-c = a / b; // the variable 'c' stores a value of 8 only as opposed to the expected result of 8.409
+c = a / b; // la variable 'c' guarda el valor de 8 en lugar del resultado esperado de 8.409
 ----
 [%hardbreaks]
 
 --
 // HOW TO USE SECTION ENDS
 
-// SEE ALSO SECTION STARTS
-[#see_also]
---
-
-[float]
-=== See also
-
-[role="language"]
-
---
-// SEE ALSO SECTION ENDS
