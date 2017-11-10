@@ -19,7 +19,7 @@ subCategories: [ "Operadores Aritméticos" ]
 
 [float]
 === Descripción
-La *división* es una de las cuatro operations aritméticas básicas. El operator `/` (diagonal) opera con dos operandos y produce el resultado.
+La *división* es una de las cuatro operaciones aritméticas básicas. El operador `/` (diagonal) opera con dos operandos y produce el resultado.
 [%hardbreaks]
 
 
@@ -33,8 +33,8 @@ resultado = numerador / denominador;
 [float]
 === Parámetros
 `resultado` : variable. *Tipos de dato permitidos:* int, float, double, byte, short, long  +
-`numerador` : variable or constante. *Tipos de dato permitidos:* int, float, double, byte, short, long  +
-`denominador` : variable or constante *distinta a cero* . *Tipos de dato permitidos:* int, float, double, byte, short, long
+`numerador` : variable o constante. *Tipos de dato permitidos:* int, float, double, byte, short, long  +
+`denominador` : variable o constante *distinta a cero* . *Tipos de dato permitidos:* int, float, double, byte, short, long
 [%hardbreaks]
 
 --
@@ -59,7 +59,7 @@ c = a / b; // la variable 'c' recibe el valor de 5 tras ejecutarse la instrucci�
 
 [float]
 === Notas  y precauciones 
-1. Si uno de los números (operandos) es de tipo float o double, se usar matemática de punto flotante para el cálculo.
+1. Si uno de los números (operandos) es de tipo float o double, se usará matemática de punto flotante para el cálculo.
 
 2. Si los operandos son de tipo  float / double y la variable que guarda el resultado es un integer, entonces solo la parte entera es almacenada, y la parte fraccionaria se pierde.
 
