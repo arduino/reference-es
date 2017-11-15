@@ -13,13 +13,13 @@ title: Serial.availableForWrite()
 --
 
 [float]
-=== Description
-Get the number of bytes (characters) available for writing in the serial buffer without blocking the write operation.
+=== Descripción
+Devuelve el número de bytes (caracteres) disponibles para escritura en el buffer del puerto serial sin bloqueat la operación de escritura.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxis
 `Serial.availableForWrite()`
 
 _Arduino Mega only:_
@@ -30,12 +30,12 @@ _Arduino Mega only:_
 
 
 [float]
-=== Parameters
-Nothing
+=== Parámetros
+Ninguno
 
 [float]
-=== Returns
-The number of bytes available to read .
+=== Devuelve
+Número de bytes disponibles para escritura
 --
 // OVERVIEW SECTION ENDS
 
@@ -45,7 +45,7 @@ The number of bytes available to read .
 --
 
 [float]
-=== See also
+=== Ver también
 
 [role="language"]
 * #LANGUAGE# link:../begin[begin()] +
