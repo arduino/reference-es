@@ -2,8 +2,7 @@
 title: Mouse.begin()
 ---
 
-:source-highlighter: pygments
-:pygments-style: arduino
+
 
 
 
@@ -50,6 +49,8 @@ Nothing
 
 [source,arduino]
 ----
+#include <Mouse.h>
+
 void setup(){
  pinMode(2, INPUT);
 }

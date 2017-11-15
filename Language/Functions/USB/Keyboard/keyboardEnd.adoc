@@ -1,8 +1,7 @@
 ---
 title: Keyboard.end()
 ---
-:source-highlighter: pygments
-:pygments-style: arduino
+
 
 
 
@@ -49,6 +48,8 @@ Nothing
 
 [source,arduino]
 ----
+#include <Keyboard.h>
+
 void setup() {
   //start keyboard communication
   Keyboard.begin();

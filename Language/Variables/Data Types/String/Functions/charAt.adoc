@@ -4,8 +4,7 @@ categories: [ "Data Types" ]
 subCategories: [ "StringObject Function" ]
 ---
 
-:source-highlighter: pygments
-:pygments-style: arduino
+
 
 
 
@@ -34,7 +33,7 @@ string.charAt(n)
 === Parameters
 `string`: a variable of type String
 
-`n`: a variable of type String
+`n`: a variable of type unsigned int
 
 
 [float]

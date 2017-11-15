@@ -5,10 +5,6 @@ categories: [ "Structure" ]
 subCategories: [ "Operadores Aritméticos" ]
 ---
 
-:source-highlighter: pygments
-:pygments-style: arduino
-
-
 
 = = Asignación (signo individual de igualdad)
 

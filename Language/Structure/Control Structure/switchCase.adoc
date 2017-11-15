@@ -4,8 +4,7 @@ categories: [ "Structure" ]
 subCategories: [ "Control Structure" ]
 ---
 
-:source-highlighter: pygments
-:pygments-style: arduino
+
 
 
 
@@ -76,6 +75,7 @@ Nothing
     default:
       // if nothing else matches, do the default
       // default is optional
+      break;
   }
 
 ----

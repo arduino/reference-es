@@ -1,8 +1,7 @@
 ---
 title: Mouse.end()
 ---
-:source-highlighter: pygments
-:pygments-style: arduino
+
 
 
 
@@ -49,6 +48,8 @@ Nothing
 
 [source,arduino]
 ----
+#include <Mouse.h>
+
 void setup(){
   pinMode(2,INPUT);
   //initiate the Mouse library
@@ -56,7 +57,7 @@ void setup(){
 }
 
 void loop(){
-  //if the button is pressed, send a Right mouse click
+  //if the button is pressed, send a left mouse click
   //then end the Mouse emulation
   if(digitalRead(2) == HIGH){
     Mouse.click();
