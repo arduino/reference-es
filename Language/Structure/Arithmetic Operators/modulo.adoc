@@ -1,15 +1,15 @@
 ---
 title: "%"
-title_expanded: "modulo"
+title_expanded: "Módulo"
 categories: [ "Structure" ]
-subCategories: [ "Arithmetic Operators" ]
+subCategories: [ "Operadores Aritméticos " ]
 ---
 
 
 
 
 
-= % Modulo
+= % Módulo
 
 
 // OVERVIEW SECTION STARTS
@@ -17,23 +17,23 @@ subCategories: [ "Arithmetic Operators" ]
 --
 
 [float]
-=== Description
-*Modulo* operation calculates the remainder when one integer is divided by another. It is useful for keeping a variable within a particular range (e.g. the size of an array). The `%` (percent) symbol is used to carry out modulo operation.
+=== Descripción
+La operación de *Módulo*  calcula el residuo que resulta de dividir un entero entre otro. Sirve para mantener una variable dentro de un rango en particular (e.g. el tamaño de un arreglo). El símbolo `%` (porcentaje) se usa para ejecutar la operación de módulo.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxis
 [source,arduino]
 ----
 remainder = dividend % divisor;
 ----
 
 [float]
-=== Parameters
-`remainder` : variable. *Allowed data types:* int, float, double +
-`dividend` : variable or constant. *Allowed data types:* int +
-`divisor` : *non zero* variable or constant. *Allowed data types:* int
+=== Parámetros
+`residuo` : variable. *Tipos de datos permitidos:* int, float, double +
+`dividendo` : variable o constante. *Tipos de datos permitidos:* int +
+`divisor` : variable o constante *distinta a cero*. *Tipos de datos permitidos:* int
 [%hardbreaks]
 
 --
@@ -46,20 +46,20 @@ remainder = dividend % divisor;
 --
 
 [float]
-=== Example Code
+=== Ejemplo
 
 [source,arduino]
 ----
 int x = 0;
-x = 7 % 5;    // x now contains 2
-x = 9 % 5;    // x now contains 4
-x = 5 % 5;    // x now contains 0
-x = 4 % 5;    // x now contains 4
+x = 7 % 5;    // x ahora contiene 2
+x = 9 % 5;    // x ahora contiene 4
+x = 5 % 5;    // x ahora contiene 0
+x = 4 % 5;    // x ahora contiene 4
 ----
 
 [source,arduino]
 ----
-/* update one value in an array each time through a loop */
+/* actualizar un valor a la vez en un arreglo mediante un ciclo */
 
 int values[10];
 int i = 0;
@@ -69,27 +69,17 @@ void setup() {}
 void loop()
 {
   values[i] = analogRead(0);
-  i = (i + 1) % 10;   // modulo operator rolls over variable
+  i = (i + 1) % 10;   // el operador de módulo cicla sobre la variable
 }
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-The modulo operator does not work on floats.
+=== Notas y Precauciones
+El operador de módulo no funciona con variables de tipo float.
 [%hardbreaks]
 
 --
 // HOW TO USE SECTION ENDS
 
-// SEE ALSO SECTION STARTS
-[#see_also]
---
 
-[float]
-=== See also
-
-[role="language"]
-
---
-// SEE ALSO SECTION ENDS
