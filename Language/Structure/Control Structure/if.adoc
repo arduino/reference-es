@@ -86,7 +86,7 @@ Esto se debe a que C ++ evalúa la sentencia de `if (x=10)` de siguiente manera:
 --
 
 [float]
-=== See also
+=== Ver también
 
 [role="language"]
 
