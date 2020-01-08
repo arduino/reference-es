@@ -18,7 +18,7 @@ subCategories: [ "Control Structure" ]
 [float]
 === Descripción
 [%hardbreaks]
-El bucle `while` e repetirá continuamente, e infinitamente, hasta que la expresión dentro del paréntesis, () se vuelva falsa. Algo debe cambiar la variable probada, o el ciclo while nunca saldrá. Esto podría estar en su código, como una variable incrementada, o una condición externa, como probar un sensor.
+El bucle `while` se repetirá continua e infinitamente, hasta que la expresión dentro del paréntesis () se vuelva falsa. Algo debe cambiar la variable probada, o el ciclo while nunca saldrá. Esto podría estar en su código, como una variable incrementada, o una condición externa, como probar un sensor.
 
 [float]
 === Sintaxis
