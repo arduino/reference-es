@@ -16,19 +16,19 @@ subCategories: [ "Control Structure" ]
 --
 
 [float]
-=== Description
+=== Descripción
 [%hardbreaks]
-A `while` loop will loop continuously, and infinitely, until the expression inside the parenthesis, () becomes false. Something must change the tested variable, or the while loop will never exit. This could be in your code, such as an incremented variable, or an external condition, such as testing a sensor.
+El bucle `while` e repetirá continuamente, e infinitamente, hasta que la expresión dentro del paréntesis, () se vuelva falsa. Algo debe cambiar la variable probada, o el ciclo while nunca saldrá. Esto podría estar en su código, como una variable incrementada, o una condición externa, como probar un sensor.
 
 [float]
-=== Syntax
+=== Sintaxis
 [source,arduino]
 ----
-while(condition){
-  // statement(s)
+while(condición){
+  // sentencia(s)
 }
 ----
-The `condition` is a boolean expression that evaluates to `true` or `false`.
+La `condición` es una expresión booleana que se evalúa como `true` o `false`.
 
 --
 // OVERVIEW SECTION ENDS
@@ -41,13 +41,13 @@ The `condition` is a boolean expression that evaluates to `true` or `false`.
 --
 
 [float]
-=== Example Code
+=== Código de ejemplo
 
 [source,arduino]
 ----
 var = 0;
 while(var < 200){
-  // do something repetitive 200 times
+  // hace algo 200 veces
   var++;
 }
 ----
@@ -62,7 +62,7 @@ while(var < 200){
 --
 
 [float]
-=== See also
+=== Ver también
 
 [role="language"]
 
