@@ -8,35 +8,35 @@ subCategories: [ "Control Structure" ]
 
 
 
-= if (conditional) and ==, !=, <, > (comparison operators)
+= if (condición) and ==, !=, <, > (operadores de comparación)
 
 
 // OVERVIEW SECTION STARTS
 [#overview]
 --
 [float]
-=== Description
-The `if` statement checks for a condition and executes the proceeding statement or set of statements if the condition is 'true'.
+=== Descripción
+La instrucción `if` verifica si hay una condición y ejecuta la declaración o el conjunto de declaraciones si la condición es `true`.
 [%hardbreaks]
 
 [float]
-=== Syntax
+=== Sintaxis
 [source,arduino]
 ----
-if (condition)
+if (condición)
 {
-  //statement(s)
+  //Instrucion(es)
 }
 ----
 
 [float]
-=== Parameters
-condition: a boolean expression i.e., can be `true` or `false`
+===Parámetros
+condition: una expresión booleana (es decir, puede ser `true` o `false` ).
 
 [float]
-=== Example Code
+=== Código de ejemplo
 
-The brackets may be omitted after an if statement. If this is done, the next line (defined by the semicolon) becomes the only conditional statement.
+Los corchetes pueden omitirse después de una declaración `if`. Si se hace esto, la siguiente línea (definida por el punto y coma) se convierte en la única instrucción condicional.
 [%hardbreaks]
 
 [source,arduino]
@@ -51,29 +51,28 @@ if (x > 120){ digitalWrite(LEDpin, HIGH); }
 if (x > 120){
   digitalWrite(LEDpin1, HIGH);
   digitalWrite(LEDpin2, HIGH);
-}                                 // all are correct
+}                                 // todas son correctas
 ----
 [%hardbreaks]
 
 
 [float]
-=== Notes and Warnings
-The statements being evaluated inside the parentheses require the use of one or more operators shown below.
-[%hardbreaks]
+=== Notas y advertencias
+Las declaraciones que se evalúan dentro de los paréntesis requieren el uso de uno o más operadores que se muestran a continuación.[%hardbreaks]
 
-*Comparison Operators:*
+*Operadores de comparación:*
 
- x == y (x is equal to y)
- x != y (x is not equal to y)
- x <  y (x is less than y)
- x >  y (x is greater than y)
- x <= y (x is less than or equal to y)
- x >= y (x is greater than or equal to y)
+ x == y (x es igual a y)
+ x != y (x no es igual a y)
+ x <  y (x es menor que y)
+ x >  y (x es mayor que y)
+ x <= y (x es menor o igual que y)
+ x >= y (x es mayor o igual que y)
 
 
-Beware of accidentally using the single equal sign (e.g. `if (x = 10)` ). The single equal sign is the assignment operator, and sets `x` to 10 (puts the value 10 into the variable `x`). Instead use the double equal sign (e.g. `if (x == 10)` ), which is the comparison operator, and tests _whether_ `x` is equal to 10 or not. The latter statement is only true if `x` equals 10, but the former statement will always be true.
+Tenga cuidado de usar accidentalmente el signo igual único (Por ejemplo `if (x = 10)` ). El signo igual único es el operador de asignación y se establece `x` en 10(pone el valor 10 en la variable `x`). En su lugar, utilice el doble signo igual (ejemplo `if (x == 10)` ), Que es el operador de comparación, y comprueba si `x` es igual a 10 o no.  El último enunciado solo es verdadero si `x` es igual a 10, pero el enunciado anterior siempre será verdadero.
 
-This is because C evaluates the statement `if (x=10)` as follows: 10 is assigned to `x` (remember that the single equal sign is the (http://arduino.cc/en/Reference/Assignment[assignment operator^])), so `x` now contains 10. Then the 'if' conditional evaluates 10, which always evaluates to `TRUE`, since any non-zero number evaluates to TRUE. Consequently, `if (x = 10)` will always evaluate to `TRUE`, which is not the desired result when using an 'if' statement. Additionally, the variable `x` will be set to 10, which is also not a desired action.
+Esto se debe a que C ++ evalúa la sentencia de `if (x=10)` de siguiente manera: se asigna 10 a x(recuerde que el signo igual único es el ( operador de asignación ) (http://arduino.cc/en/Reference/Assignment[assignment operator^]), por lo que ahora `x` contiene 10. Luego, el condiciona 'if' conditional evalúa 10, que siempre se evalúa como `true`, porque un número distinto de cero se evalúa como `true`. En consecuencia, `if (x = 10)` siempre evaluará como `TRUE`, que no es el resultado deseado cuando se utiliza una instrucción `if`. Además, la variable `x` se establecerá en 10, que tampoco es una acción deseada.
 [%hardbreaks]
 
 --
@@ -87,7 +86,7 @@ This is because C evaluates the statement `if (x=10)` as follows: 10 is assigned
 --
 
 [float]
-=== See also
+=== Ver también
 
 [role="language"]
 
