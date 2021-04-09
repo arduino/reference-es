@@ -13,15 +13,15 @@ title: Serial.begin()
 --
 
 [float]
-=== Description
-Sets the data rate in bits per second (baud) for serial data transmission. For communicating with the computer, use one of these rates: 300, 600, 1200, 2400, 4800, 9600, 14400, 19200, 28800, 38400, 57600, or 115200. You can, however, specify other rates - for example, to communicate over pins 0 and 1 with a component that requires a particular baud rate.
+=== Descripción
+Establece la velocidad de comunicación en bits por segundo (baudios) para la transmisión de datos por el puerto serial. Para comunicar con el ordenador usar una de estas velocidades: 300, 600, 1200, 2400, 4800, 9600, 14400, 19200, 28800, 38400, 57600, o 115200. También se pueden estableder otras velocidades, por ejemplo, para establecer comunicación sobre los pines 0 y 1 con un componente que requiera una velocidad particular.
 
-An optional second argument configures the data, parity, and stop bits. The default is 8 data bits, no parity, one stop bit.
+Un segundo argumento opcional configura la cantidad de datos, la paridad y el bit de parada. El valor por defecto es de 8 bits, sin paridad y un bit de parada.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxis
 `Serial.begin(speed)`
 `Serial.begin(speed, config)`
 
@@ -37,10 +37,10 @@ _Arduino Mega only:_
 
 
 [float]
-=== Parameters
-`speed`: in bits per second (baud) - `long`
+=== Parámetros
+`speed`: en bits por segundo (baudios) - `long`
 
-`config`: sets data, parity, and stop bits. Valid values are
+`config`: establece el tipo de dato, la paridad y el bit de paradas. Son valores validos:
 
 `SERIAL_5N1` +
 `SERIAL_6N1` +
@@ -68,8 +68,8 @@ _Arduino Mega only:_
 `SERIAL_8O2` +
 
 [float]
-=== Returns
-Nothing
+=== Devuelve
+Nada
 
 --
 // OVERVIEW SECTION ENDS
@@ -82,7 +82,7 @@ Nothing
 --
 
 [float]
-=== Example Code
+=== Código de ejemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
 
@@ -117,7 +117,7 @@ void setup(){
 void loop() {}
 ----
 [%hardbreaks]
-Thanks to Jeff Gray for the mega example
+Gracias a Jeff Gray por el ejemplo para mega
 
 --
 // HOW TO USE SECTION ENDS
