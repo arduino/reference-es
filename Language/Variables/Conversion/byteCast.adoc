@@ -1,7 +1,7 @@
 ---
-title: byte()
-categories: [ "Variables" ]
-subCategories: [ "Conversion" ]
+título: byte()
+categoría: [ "Variables" ]
+subCategoría: [ "Conversión" ]
 ---
 
 
@@ -16,22 +16,22 @@ subCategories: [ "Conversion" ]
 --
 
 [float]
-=== Description
-Converts a value to the link:../../data-types/byte[byte] data type.
+=== Descripción
+Convierte un valor al tipo de dato link:../../data-types/byte[byte].
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Sintaxis
 `byte(x)`
 
 
 [float]
-=== Parameters
-`x`: a value of any type
+=== Parámetros
+`x`: valor de cualquier tipo
 
 [float]
-=== Returns
+=== Valor de retorno
 `byte`
 
 --
@@ -44,10 +44,10 @@ Converts a value to the link:../../data-types/byte[byte] data type.
 --
 
 [float]
-=== See also
+=== También puedes ver
 
 [role="language"]
-* #LANGUAGE# link:../../data-types/byte[byte]
+* #Lenguaje# link:../../data-types/byte[byte]
 
 --
 // SEE ALSO SECTION ENDS
