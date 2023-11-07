@@ -1,77 +1,103 @@
 ---
-title: analogReference()
-categories: [ "Functions" ]
-subCategories: [ "Analog I/O" ]
+título: analogReference()
+categorías: [ "Funciones" ]
+subCategorías: [ "E/S analógicas" ]
 ---
+
+
 
 
 //
 
 
+
+
 = analogReference()
 
 
-// OVERVIEW SECTION STARTS
+
+
+// COMIENZA LA SECCIÓN OVERVIEW
 [#overview]
 --
 
-[float]
-=== Description
-Configures the reference voltage used for analog input (i.e. the value used as the top of the input range). The options are:
 
-* DEFAULT: the default analog reference of 5 volts (on 5V Arduino boards) or 3.3 volts (on 3.3V Arduino boards)
-* INTERNAL: an built-in reference, equal to 1.1 volts on the ATmega168 or ATmega328P and 2.56 volts on the ATmega8 (not available on the Arduino Mega)
-* INTERNAL1V1: a built-in 1.1V reference (Arduino Mega only)
-* INTERNAL2V56: a built-in 2.56V reference (Arduino Mega only)
-* EXTERNAL: the voltage applied to the AREF pin (0 to 5V only) is used as the reference.
+[float]
+=== Descripción
+Configura la tensión de referencia utilizada para la entrada analógica (es decir, el valor utilizado como tope del rango de entrada). Las opciones son:
+
+
+* DEFAULT: la referencia analógica por defecto de 5 voltios (en placas Arduino de 5V) o 3.3 voltios (en placas Arduino de 3.3V)
+* INTERNAL: una referencia incorporada, igual a 1,1 voltios en el ATmega168 o ATmega328P y 2,56 voltios en el ATmega8 (no disponible en el Arduino Mega)
+* INTERNAL1V1: una referencia integrada de 1,1 V (sólo Arduino Mega)
+* INTERNAL2V56: una referencia integrada de 2,56V (sólo Arduino Mega)
+* EXTERNAL: la tensión aplicada al pin AREF (sólo de 0 a 5V) se utiliza como referencia.
 [%hardbreaks]
 
 
-[float]
-=== Syntax
-`analogReference(type)`
 
 
 [float]
-=== Parameters
-`type`: which type of reference to use (DEFAULT, INTERNAL, INTERNAL1V1, INTERNAL2V56, or EXTERNAL).
+=== Sintaxis
+`analogReference(tipo)`
+
+
+
 
 [float]
-=== Returns
-Nothing
+=== Parámetros
+`type`: qué tipo de referencia usar (DEFAULT, INTERNAL, INTERNAL1V1, INTERNAL2V56, o EXTERNAL).
+
+
+[float]
+=== Devuelve
+Nada
+
 
 --
-// OVERVIEW SECTION ENDS
+// FIN DE LA SECCIÓN
 
 
 
 
-// HOW TO USE SECTION STARTS
-[#howtouse]
+
+
+
+
+// CÓMO USAR LA SECCIÓN COMIENZA
+[#cómousar]
 --
 
+
 [float]
-=== Notes and Warnings
-After changing the analog reference, the first few readings from `analogRead()` may not be accurate.
+=== Notas y Advertencias
+Después de cambiar la referencia analógica, las primeras lecturas de `analogRead()` pueden no ser exactas.
 
-*Don't use anything less than 0V or more than 5V for external reference voltage on the AREF pin! If you're using an external reference on the AREF pin, you must set the analog reference to EXTERNAL before calling `analogRead()`.* Otherwise, you will short together the active reference voltage (internally generated) and the AREF pin, possibly damaging the microcontroller on your Arduino board.
 
-Alternatively, you can connect the external reference voltage to the AREF pin through a 5K resistor, allowing you to switch between external and internal reference voltages. Note that the resistor will alter the voltage that gets used as the reference because there is an internal 32K resistor on the AREF pin. The two act as a voltage divider, so, for example, 2.5V applied through the resistor will yield 2.5 * 32 / (32 + 5) = ~2.2V at the AREF pin.
+*¡No uses nada inferior a 0V o superior a 5V para la tensión de referencia externa en el pin AREF! Si está utilizando una referencia externa en el pin AREF, debe establecer la referencia analógica a EXTERNAL antes de llamar a `analogRead()`.* De lo contrario, se producirá un cortocircuito entre la tensión de referencia activa (generada internamente) y el pin AREF, posiblemente dañando el microcontrolador en su placa Arduino.
+
+
+Alternativamente, puede conectar la tensión de referencia externa a la patilla AREF a través de una resistencia de 5K, lo que le permite cambiar entre las tensiones de referencia externa e interna. Ten en cuenta que la resistencia alterará la tensión que se utiliza como referencia porque hay una resistencia interna de 32K en el pin AREF. Los dos actúan como un divisor de tensión, por lo que, por ejemplo, 2,5V aplicado a través de la resistencia dará lugar a 2,5 * 32 / (32 + 5) = ~ 2,2V en el pin AREF.
 [%hardbreaks]
 
+
 --
-// HOW TO USE SECTION ENDS
+// CÓMO USAR LA SECCIÓN EXTREMOS
 
 
-// SEE ALSO SECTION
-[#see_also]
+
+
+// VER TAMBIÉN SECCIÓN
+[#ver_tambien]
 --
+
 
 [float]
-=== See also
+=== Véase también
 
-[role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/AnalogInputPins[Description of analog input pins]
+
+[role="ejemplo"]
+* #EXAMPLE# http://arduino.cc/es/Tutorial/AnalogInputPins[Descripción de los pines de entrada analógica]
 
 --
-// SEE ALSO SECTION ENDS
+// VER TAMBIÉN SECCIÓN EXTREMOS
