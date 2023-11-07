@@ -1,97 +1,99 @@
 ---
-title: digitalWrite()
-categories: [ "Functions" ]
-subCategories: [ "Digital I/O" ]
+título: digitalWrite()
+categorías: [ "Funciones" ]
+subCategorías: [ "E/S digitales" ]
 ---
 
 
 //
-:ext-relative: .html
+:ext-relativo: .html
 
-= digitalWrite()
+= digitalEscritura()
 
 
-// OVERVIEW SECTION STARTS
+// COMIENZA LA SECCIÓN VISIÓN GENERAL
 [#overview]
 --
 
 [float]
-=== Description
-Write a `HIGH` or a `LOW` value to a digital pin.
+=== Descripción
+Escribe un valor `HIGH` o `LOW` a un pin digital.
 
-If the pin has been configured as an `OUTPUT` with `pinMode()`, its voltage will be set to the corresponding value: 5V (or 3.3V on 3.3V boards) for `HIGH`, 0V (ground) for `LOW`.
+Si el pin ha sido configurado como `OUTPUT` con `pinMode()`, su voltaje se ajustará al valor correspondiente: 5V (o 3.3V en placas de 3.3V) para `HIGH`, 0V (masa) para `LOW`.
 [%hardbreaks]
 
-If the pin is configured as an `INPUT`, `digitalWrite()` will enable (`HIGH`) or disable (`LOW`) the internal pullup on the input pin. It is recommended to set the `pinMode()` to `INPUT_PULLUP` to enable the internal pull-up resistor. See the digital pins tutorial for more information.
+Si el pin está configurado como `INPUT`, `digitalWrite()` activará (`HIGH`) o desactivará (`LOW`) el pullup interno del pin de entrada. Se recomienda ajustar `pinMode()` a `INPUT_PULLUP` para habilitar la resistencia interna de pull-up. Ver el tutorial de pines digitales para más información.
 [%hardbreaks]
 
-If you do not set the `pinMode()` to `OUTPUT`, and connect an LED to a pin, when calling `digitalWrite(HIGH)`, the LED may appear dim. Without explicitly setting `pinMode()`, `digitalWrite()` will have enabled the internal pull-up resistor, which acts like a large current-limiting resistor.
+Si no establece el `pinMode()` a `OUTPUT`, y conecta un LED a un pin, al llamar a `digitalWrite(HIGH)`, el LED puede aparecer atenuado. Sin ajustar explícitamente `pinMode()`, `digitalWrite()` habrá habilitado la resistencia interna de pull-up, que actúa como una gran resistencia limitadora de corriente.
 [%hardbreaks]
 
 [float]
-=== Syntax
-`digitalWrite(pin, value)`
+=== Sintaxis
+`escritura digital(pin, valor)`
 
 
 [float]
-=== Parameters
-`pin`: the pin number
+=== Parámetros
+`pin`: el número de pin
 
-`value`: `HIGH` or `LOW`
+Valor: HIGH oLOW
 
 [float]
-=== Returns
-Nothing
+=== Devuelve
+Nada
 
 --
-// OVERVIEW SECTION ENDS
+// RESUMEN SECCIÓN TERMINA
 
 
 
 
-// HOW TO USE SECTION STARTS
-[#howtouse]
+// CÓMO USAR LA SECCIÓN COMIENZA
+[#cómousar]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code makes the digital pin 13 an `OUTPUT` and toggles it by alternating between `HIGH` and `LOW` at one second pace.
+=== Código de ejemplo
+// Describe en qué consiste el código de ejemplo y añade el código relevante ►►►►► ESTA SECCIÓN ES OBLIGATORIA ◄◄◄◄◄
+El código convierte el pin digital 13 en una `OUTPUT` y lo conmuta alternando entre `HIGH` y `LOW` a un ritmo de un segundo.
 
-//[source,arduino]
+//[fuente,arduino]
 ----
 void setup()
 {
-  pinMode(13, OUTPUT);          // sets the digital pin 13 as output
+  pinMode(13, OUTPUT); // establece el pin digital 13 como salida
 }
 
 void loop()
 {
-  digitalWrite(13, HIGH);       // sets the digital pin 13 on
-  delay(1000);                  // waits for a second
-  digitalWrite(13, LOW);        // sets the digital pin 13 off
-  delay(1000);                  // waits for a second
+  digitalWrite(13, HIGH); // activa el pin digital 13
+  delay(1000); // espera un segundo
+  digitalWrite(13, LOW); // apaga el pin digital 13
+  delay(1000); // espera un segundo
 }
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-The analog input pins can be used as digital pins, referred to as A0, A1, etc.
+=== Notas y advertencias
+Los pines de entrada analógica pueden utilizarse como pines digitales, denominados A0, A1, etc.
 
 --
-// HOW TO USE SECTION ENDS
+// CÓMO USAR LA SECCIÓN EXTREMOS
 
 
-// SEE ALSO SECTION
-[#see_also]
+// VER TAMBIÉN SECCIÓN
+[#ver_tambien]
 --
 
 [float]
-=== See also
+=== Véase también
 
-[role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/DigitalPins[Tutorial: Digital Pins]
+[role="ejemplo"]
+* #EXAMPLE# http://arduino.cc/es/Tutorial/DigitalPins[Tutorial: Digital Pins]
 
 --
-// SEE ALSO SECTION ENDS
+// VER TAMBIÉN SECCIÓN EXTREMOS
+
+
